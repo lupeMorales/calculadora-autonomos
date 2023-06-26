@@ -67,7 +67,7 @@ body {
   @media all and (min-width: 1440px) {
     .page__header {
       margin: 0 auto;
-      width: 60%; }
+      width: 80%; }
       .page__header h1 {
         font-size: 5rem; }
       .page__header p {
