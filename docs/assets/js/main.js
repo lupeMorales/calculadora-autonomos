@@ -1,1 +1,1 @@
-"use strict";console.log(">> Ready :)");
+"use strict";const taxBase=document.querySelector(".js-tax-base"),iva=document.querySelector(".js-iva"),ivaResult=document.querySelector(".js-iva-result"),irpf=document.querySelector(".js-irpf"),irpfResult=document.querySelector(".js-irpf-result"),price=document.querySelector(".js-price"),totalInvoice=document.querySelector(".js-total"),totalToReceive=document.querySelector(".js-total-to-receive");

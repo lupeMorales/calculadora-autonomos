@@ -3,8 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Calculadora de Autonómos</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="icon" href="./assets/images/favicon.png" />
   </head>
@@ -12,55 +15,59 @@
   <body>
     <div class="page">
       <header class="page__header">
-        <img src="./assets/images/logo-adalab.png" alt="Adalab">
-        <h1>Bienvenidos a Adalab</h1>
+        <div class="page__header--info">
+          <h1>Calculadora de los Autónomos</h1>
+          <p>Si eres autónomo y quieres tener las cuentas claras, ahora puedes aprovechar las ventajas de nuestra calculadora para autónomos. Con ella podrás saber fácilmente cuánto vas a ganar y cuánto tendrás que pagar o exigir de IVA e IRPF.</p>
+          <a href="#calculator"><button>calcula  ahora</button></a>
+        </div>
+        <div class="page__header--image">
+          <img src="./assets/images/calculate.jpg" alt="calculadora" />
+        </div>
       </header>
 
       <main class="page__main">
-        <h2>Este es el starter kit de Adalab</h2>
-        <p>Lo usamos para aprender:</p>
-        <ul class="main__list">
-          <li>Sass</li>
-          <li>HTML partials</li>
-          <li>Gulp</li>
-          <li>y muchas cosas más</li>
-        </ul>
-        <p>Si quieres saber cúales son las rutas correctas para:</p>
-        <ul class="main__list">
-          <li>
-            una <code class="code">&lt;img /&gt;</code> mira el fichero
-            <code class="code">./src/html/partials/header.html</code>.
-          </li>
-          <li>
-            y para un <code class="code">background-image</code> mira el fichero
-            <code class="code">./src/html/scss/layout/_page.scss</code>.
-          </li>
-        </ul>
-        <p>
-          Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-          <code class="code">./src/html/index.html</code> y
-          <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-          enlaces:
-        </p>
-        <ul class="main__list">
-          <li>
-            <a class="link__adalab" href="https://adalab.es">Adalab</a>
+        <h2 class="title">
+          Rellena los datos y obtén el importe final de tu factura
+        </h2>
+        <div class="calculator" id="calculator">
+          <section class="calculator__data">
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Base imponible (€)</legend>
+                <input type="text" id="tax-base" class="js-tax-base" />
+              </fieldset>
 
-          </li>
-          <li>
-            <a class="" href="./more-info.html">Más info del starter kit</a>
-
-          </li>
-        </ul>
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Impuestos</legend>
+                <div class="form__fieldset--section">
+                  <input type="radio" id="iva" checked="checked" />
+                  <label for="iva">IVA (%)</label>
+                  <input type="number" value="21" max="21" min="0" class="js-iva" />
+                  <p class="form__result js-iva-result">0,00 €</p>
+                </div>
+                <div class="form__fieldset--section">
+                  <input type="radio" id="irpf" checked="checked" />
+                  <label for="irpf">IRPF (%)</label>
+                  <input type="number" value="15" class="js-irpf" />
+                  <p class="form__result js-irpf-result">0,00 €</p>
+                </div>
+              </fieldset>
+            </form>
+          </section>
+          <div>
+            <section class="calculator__result">
+              <p class="calculator__result--title">Precio con IVA:</p>
+              <p class="calculator__result--total js-price">0,00 €</p>
+              <p class="calculator__result--title">IMPORTE TOTAL FACTURA:</p>
+              <p class="calculator__result--total js-total">0,00 €</p>
+            </section>
+            <section class="calculator__final">
+              <p class="calculator__final--title">Lo que me llevo:</p>
+              <p class="calculator__result--total js-total-to-receive">0,00 €</p>
+            </section>
+          </div>
+        </div>
       </main>
-
-      <footer class="page__footer">
-        <small>
-          &copy; Todos los derechos reservados
-          <a class="link__adalab" href="https://adalab.es">Adalab</a>
-
-        </small>
-      </footer>
 
     </div>
     <script src="./assets/js/main.js"></script>
