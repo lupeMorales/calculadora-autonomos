@@ -12,18 +12,24 @@
 
         <fieldset class="form__fieldset">
           <legend class="form__title">Impuestos</legend>
-          <input type="radio" id="iva" />
-          <label for="iva">IVA (%)</label>
-          <input type="number" value="21" />
+          <div class="form__fieldset--section">
+            <input type="radio" id="iva" checked="checked"/>
+            <label for="iva">IVA (%)</label>
+            <input type="number" value="21" />
+            <p class="form__result">0,00 €</p>
+          </div>
+         <div class="form__fieldset--section">
+        <input type="radio" id="irpf" checked="checked" />
+          <label for="irpf">IRPF (%)</label>
+          <input type="number"  value="15" />
           <p class="form__result">0,00 €</p>
-          <input type="radio" id="irpf" />
-          <label for="irpf" value="15">IRPF (%)</label>
-          <input type="number" />
-          <p class="form__result">0,00 €</p>
+         </div>
+          
         </fieldset>
       </form>
     </section>
-    <div>  <section class="calculator__result">
+    <div> 
+         <section class="calculator__result">
         <p class="calculator__result--title">Precio con IVA:</p>
         <p class="calculator__result--total">0,00 €</p>
         <p class="calculator__result--title"">IMPORTE TOTAL FACTURA:</p>
@@ -35,6 +41,10 @@
           <p class="calculator__final--title">Lo que me llevo:</p>
           <p class="calculator__result--total">0,00 €</p>
         </section></div>
+
+        
+
+
   
   </div>
 </main>

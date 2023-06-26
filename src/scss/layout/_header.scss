@@ -5,6 +5,7 @@
   margin-bottom: 3rem;
   flex-direction: column;
   gap: 30px;
+  padding: 60px 0;
 
   h1 {
     margin-bottom: 20px;
@@ -30,10 +31,14 @@
     object-fit: fill;
   }
   @media all and (min-width: 768px) {
-    padding: 0 50px;
+    padding: 60px;
     flex-direction: row;
     .page__header--info {
       width: 60%;
     }
+  }
+  @media all and (min-width: 1440px) {
+    margin: 0 auto;
+    width: 60%;
   }
 }

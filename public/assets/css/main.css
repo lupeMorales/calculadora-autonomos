@@ -12,12 +12,14 @@ html {
   padding: 0 5px;
   border-radius: 5px; }
 
-.link__adalab:hover {
-  background-color: #099d8d;
+.link__main {
   color: #fff; }
 
+.link__main:hover {
+  color: #6c63ff; }
+
 .link__github:hover {
-  background-color: #CCC;
+  background-color: #ccc;
   color: #000; }
 
 body {
@@ -30,7 +32,8 @@ body {
   align-items: center;
   margin-bottom: 3rem;
   flex-direction: column;
-  gap: 30px; }
+  gap: 30px;
+  padding: 60px 0; }
   .page__header h1 {
     margin-bottom: 20px;
     font-size: 3rem; }
@@ -52,14 +55,19 @@ body {
     object-fit: fill; }
   @media all and (min-width: 768px) {
     .page__header {
-      padding: 0 50px;
+      padding: 60px;
       flex-direction: row; }
       .page__header .page__header--info {
         width: 60%; } }
+  @media all and (min-width: 1440px) {
+    .page__header {
+      margin: 0 auto;
+      width: 60%; } }
 
 .page__main {
   width: 100%;
-  height: auto; }
+  height: auto;
+  padding: 60px 0; }
   .page__main .title {
     font-size: 2.8rem;
     color: #6c63ff;
@@ -67,9 +75,10 @@ body {
   .page__main .calculator {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: first flex-start;
     justify-content: center;
-    gap: 40px; }
+    gap: 40px;
+    margin-top: 40px; }
     @media all and (min-width: 768px) {
       .page__main .calculator {
         flex-direction: row; } }
@@ -78,15 +87,22 @@ body {
     box-shadow: 5px 10px 20px #ecf2f9; }
     .page__main .form__fieldset {
       border-style: none; }
+      .page__main .form__fieldset--section {
+        padding-bottom: 30px; }
     .page__main .form__title {
       font-size: 2rem;
       color: #6c63ff; }
+    .page__main .form label {
+      font-size: 1.8rem; }
     .page__main .form input {
+      margin: 16px 0;
       padding: 10px;
+      font-size: 1.8rem;
       border: 1px solid black;
       border-radius: 8px; }
     .page__main .form__result {
       padding: 10px;
+      font-size: 1.8rem;
       border: 1px solid black;
       border-radius: 8px; }
   .page__main .calculator__result {
@@ -101,8 +117,13 @@ body {
       color: white; }
     .page__main .calculator__result--total {
       padding: 10px;
+      margin: 20px 0 18px 0;
+      font-size: 1.8rem;
       border-radius: 8px;
       background-color: white; }
+    @media all and (min-width: 768px) {
+      .page__main .calculator__result {
+        width: 50vw; } }
   .page__main .calculator__final {
     width: 100%;
     padding: 40px;
@@ -112,16 +133,6 @@ body {
       font-size: 2rem;
       color: black; }
 
-.page__footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100vw;
-  padding: 1rem;
-  color: #ecf2f9; }
-
-.main__list {
-  padding-left: 2rem;
-  padding-bottom: 20px; }
+/* @import "layout/footer"; */
 
 /*# sourceMappingURL=main.css.map */
