@@ -1,4 +1,4 @@
-![Anime](./src/images/WhiteLogo.png)
+![InvoiceUp](./src/images/WhiteLogo.png)
 
 # Calculadora de los autónomos <span> | </span>  <a href="https://lupemorales.github.io/anime/" target="_blank">   Demo </a><span> | </span>
     
@@ -17,12 +17,12 @@ Y automáticamente se calcula la cantidad a percibir, el importe total de la fac
 
 ### Web responsive mobile:
 
-![Mobile](https://github.com/lupeMorales/modulo-2-evaluacion-final-lupeMorales/blob/main/src/images/mobile_view.png?raw=true)
+![Mobile](./src/images/mobileView.png)
 
 
 ### Web responsive desktop:
 
-![Desktop](https://github.com/lupeMorales/modulo-2-evaluacion-final-lupeMorales/blob/main/src/images/desktop_view.png?raw=true)
+![Desktop](./src/images/desktop.png)
 
 ## Instalación:
 
