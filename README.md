@@ -1,4 +1,4 @@
-![InvoiceUp](./src/images/WhiteLogo.png)
+![InvoiceUp](./src/images/WhiteLogo.png=x250)
 
 # Calculadora de los autónomos <span> | </span>  <a href="https://lupemorales.github.io/anime/" target="_blank">   Demo </a><span> | </span>
     
@@ -15,14 +15,14 @@ Y automáticamente se calcula la cantidad a percibir, el importe total de la fac
 
 
 
-### Web responsive mobile:
+### View mobile:
 
 ![Mobile](./src/images/mobileView.png)
 
 
-### Web responsive desktop:
+### View desktop:
 
-![Desktop](./src/images/desktop.png)
+![Desktop](./src/images/desktopView.png)
 
 ## Instalación:
 
