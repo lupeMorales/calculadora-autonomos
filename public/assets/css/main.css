@@ -36,12 +36,13 @@ body {
   padding: 60px 0; }
   .page__header h1 {
     margin-bottom: 20px;
-    font-size: 3rem; }
+    font-size: 3.5rem; }
   .page__header p {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 2.1rem;
     text-align: justify; }
   .page__header button {
+    width: 180px;
     padding: 15px;
     border: none;
     border-radius: 40px;
@@ -62,7 +63,11 @@ body {
   @media all and (min-width: 1440px) {
     .page__header {
       margin: 0 auto;
-      width: 60%; } }
+      width: 60%; }
+      .page__header h1 {
+        font-size: 5rem; }
+      .page__header p {
+        font-size: 3rem; } }
 
 .page__main {
   width: 100%;
@@ -99,12 +104,14 @@ body {
       padding: 10px;
       font-size: 1.8rem;
       border: 1px solid black;
-      border-radius: 8px; }
+      border-radius: 8px;
+      text-align: end; }
     .page__main .form__result {
       padding: 10px;
       font-size: 1.8rem;
       border: 1px solid black;
-      border-radius: 8px; }
+      border-radius: 8px;
+      text-align: end; }
   .page__main .calculator__result {
     display: absolute;
     transform: translateY(20px);
@@ -112,6 +119,10 @@ body {
     background-color: #6c63ff;
     border-radius: 30px;
     z-index: 5; }
+    .page__main .calculator__result p:nth-child(3) {
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 2px solid white; }
     .page__main .calculator__result--title {
       font-size: 2rem;
       color: white; }
@@ -120,7 +131,8 @@ body {
       margin: 20px 0 18px 0;
       font-size: 1.8rem;
       border-radius: 8px;
-      background-color: white; }
+      background-color: white;
+      text-align: end; }
     @media all and (min-width: 768px) {
       .page__main .calculator__result {
         width: 50vw; } }
@@ -130,6 +142,7 @@ body {
     background-color: #ecf2f9;
     border-radius: 0 0 30px 30px; }
     .page__main .calculator__final--title {
+      padding-top: 20px;
       font-size: 2rem;
       color: black; }
 

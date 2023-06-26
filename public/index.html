@@ -16,9 +16,9 @@
     <div class="page">
       <header class="page__header">
         <div class="page__header--info">
-          <h1>Calculadora de los Autonomos</h1>
+          <h1>Calculadora de los Autónomos</h1>
           <p>Si eres autónomo y quieres tener las cuentas claras, ahora puedes aprovechar las ventajas de nuestra calculadora para autónomos. Con ella podrás saber fácilmente cuánto vas a ganar y cuánto tendrás que pagar o exigir de IVA e IRPF.</p>
-          <button>calcula ahora</button>
+          <button>calcula  ahora</button>
         </div>
         <div class="page__header--image">
           <img src="./assets/images/calculator3.png" alt="calculadora" />
@@ -27,52 +27,46 @@
 
       <main class="page__main">
         <h2 class="title">
-          Rellena los datos y obtén el impoete final de tu factura
+          Rellena los datos y obtén el importe final de tu factura
         </h2>
         <div class="calculator">
           <section class="calculator__data">
             <form class="form">
               <fieldset class="form__fieldset">
                 <legend class="form__title">Base imponible (€)</legend>
-                <input type="text" id="tax-base" />
+                <input type="text" id="tax-base" class="js-tax-base" />
               </fieldset>
 
               <fieldset class="form__fieldset">
                 <legend class="form__title">Impuestos</legend>
                 <div class="form__fieldset--section">
-                  <input type="radio" id="iva" checked="checked"/>
+                  <input type="radio" id="iva" checked="checked" />
                   <label for="iva">IVA (%)</label>
-                  <input type="number" value="21" />
-                  <p class="form__result">0,00 €</p>
+
+                  <input type="number" value="21" class="js-iva" />
+                  <p class="form__result js-iva-result">0,00 €</p>
                 </div>
-               <div class="form__fieldset--section">
-              <input type="radio" id="irpf" checked="checked" />
-                <label for="irpf">IRPF (%)</label>
-                <input type="number"  value="15" />
-                <p class="form__result">0,00 €</p>
-               </div>
-                
+                <div class="form__fieldset--section">
+                  <input type="radio" id="irpf" checked="checked" />
+                  <label for="irpf">IRPF (%)</label>
+                  <input type="number" value="15" class="js-irpf" />
+                  <p class="form__result js-irpf-result">0,00 €</p>
+                </div>
               </fieldset>
             </form>
           </section>
-          <div> 
-               <section class="calculator__result">
+          <div>
+            <section class="calculator__result">
               <p class="calculator__result--title">Precio con IVA:</p>
               <p class="calculator__result--total">0,00 €</p>
-              <p class="calculator__result--title"">IMPORTE TOTAL FACTURA:</p>
-              <p class="calculator__result--total">0,00 €</p>
-              <p class="calculator__result--title"">Lo que me llevo:</p>
+              <p class="calculator__result--title">IMPORTE TOTAL FACTURA:</p>
               <p class="calculator__result--total">0,00 €</p>
             </section>
             <section class="calculator__final">
-                <p class="calculator__final--title">Lo que me llevo:</p>
-                <p class="calculator__result--total">0,00 €</p>
-              </section></div>
-
-              
-
-
-        
+              <p class="calculator__final--title">Lo que me llevo:</p>
+              <p class="calculator__result--total">0,00 €</p>
+            </section>
+          </div>
         </div>
       </main>
 
