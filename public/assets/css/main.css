@@ -97,6 +97,10 @@ body {
     .page__main .form__fieldset {
       border-style: none; }
       .page__main .form__fieldset--section {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 20px;
         padding-bottom: 30px; }
     .page__main .form__title {
       font-size: 2rem;
@@ -110,12 +114,18 @@ body {
       border: 1px solid black;
       border-radius: 8px;
       text-align: end; }
+    .page__main .form input:nth-child(2) {
+      width: 100%; }
+    .page__main .form input:nth-child(3) {
+      flex-grow: 4; }
     .page__main .form__result {
       padding: 10px;
+      width: 210px;
       font-size: 1.8rem;
       border: 1px solid black;
       border-radius: 8px;
-      text-align: end; }
+      text-align: end;
+      flex-grow: 4; }
   .page__main .calculator__result {
     display: absolute;
     transform: translateY(20px);
