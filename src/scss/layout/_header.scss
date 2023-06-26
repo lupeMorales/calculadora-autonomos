@@ -19,11 +19,17 @@
   button {
     width: 180px;
     padding: 15px;
-    border: none;
+    border: 2px solid $color-primary;
     border-radius: 40px;
-    background-color: $color-primary;
-    color: white;
+    background-color: white;
+    color: $color-primary;
     text-transform: uppercase;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-primary;
+      color: white;
+    }
   }
 
   img {

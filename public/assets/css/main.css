@@ -44,11 +44,15 @@ body {
   .page__header button {
     width: 180px;
     padding: 15px;
-    border: none;
+    border: 2px solid #6c63ff;
     border-radius: 40px;
-    background-color: #6c63ff;
-    color: white;
-    text-transform: uppercase; }
+    background-color: white;
+    color: #6c63ff;
+    text-transform: uppercase;
+    cursor: pointer; }
+    .page__header button:hover {
+      background-color: #6c63ff;
+      color: white; }
   .page__header img {
     width: 100%;
     max-width: 550px;
