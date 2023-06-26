@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Calculadora de Autonómos</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+  </head>
+
+  <body>
+    <div class="page">
+      <header class="page__header">
+        <div class="page__header--info">
+          <h1>Calculadora de los Autonomos</h1>
+          <p>Si eres autónomo y quieres tener las cuentas claras, ahora puedes aprovechar las ventajas de nuestra calculadora para autónomos. Con ella podrás saber fácilmente cuánto vas a ganar y cuánto tendrás que pagar o exigir de IVA e IRPF.</p>
+          <button>calcula ahora</button>
+        </div>
+        <div class="page__header--image">
+          <img src="./assets/images/calculator3.png" alt="calculadora" />
+        </div>
+      </header>
+
+      <main class="page__main">
+        <h2 class="title">
+          Rellena los dator y obtén el impoete final de tu factura
+        </h2>
+        <div class="calculator">
+          <section class="calculator__data">
+            <form class="form">
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Base imponible (€)</legend>
+                <input type="text" id="tax-base" />
+              </fieldset>
+
+              <fieldset class="form__fieldset">
+                <legend class="form__title">Impuestos</legend>
+                <input type="radio" id="iva" />
+                <label for="iva">IVA (%)</label>
+                <input type="number" value="21" />
+                <p class="form__result">0,00 €</p>
+                <input type="radio" id="irpf" />
+                <label for="irpf" value="15">IRPF (%)</label>
+                <input type="number" />
+                <p class="form__result">0,00 €</p>
+              </fieldset>
+            </form>
+          </section>
+          <section class="calculator__result">
+            <p class="calculator__result--title">Precio con IVA:</p>
+            <p class="form__result--no-border">0,00 €</p>
+            <p class="calculator__result--title"">IMPORTE TOTAL FACTURA:</p>
+            <p class="form__result--no-border">0,00 €</p>
+            <p class="calculator__result--title"">Lo que me llevo:</p>
+            <p class="form__result--no-border">0,00 €</p>
+          </section>
+        </div>
+      </main>
+
+      <footer class="page__footer">
+        <small>
+          &copy; Todos los derechos reservados
+          <a class="link__adalab" href="https://adalab.es">Adalab</a>
+
+        </small>
+      </footer>
+
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

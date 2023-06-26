@@ -1,0 +1,47 @@
+.page__main {
+  width: 100%;
+  height: auto;
+  .title {
+    font-size: 2.8rem;
+    color: $color-primary;
+    text-align: center;
+  }
+  .form {
+    padding: 20px 40px;
+
+    box-shadow: 0 3px 10px $color-secondary;
+
+    &__fieldset {
+      border-style: none;
+    }
+
+    &__title {
+      font-size: 2rem;
+      color: $color-primary;
+    }
+
+    input {
+      padding: 10px;
+    }
+
+    &__result {
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 8px;
+      background-color: white;
+
+      &--no-border {
+        border: none;
+      }
+    }
+  }
+  .calculator__result {
+    padding: 20px 40px;
+    background-color: $color-primary;
+
+    &--title {
+      font-size: 2rem;
+      color: white;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.page__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  gap: 30px;
+
+  h1 {
+    margin-bottom: 20px;
+    font-size: 3rem;
+  }
+  p {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: justify;
+  }
+  button {
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: $color-primary;
+    color: white;
+    text-transform: uppercase;
+  }
+
+  img {
+    width: 100%;
+    max-width: 550px;
+    object-fit: fill;
+  }
+  @media all and (min-width: 768px) {
+    padding: 0 50px;
+    flex-direction: row;
+    .page__header--info {
+      width: 60%;
+    }
+  }
+}

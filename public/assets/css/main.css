@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+.code {
+  font-size: 16px;
+  background: #d8d8d8;
+  padding: 0 5px;
+  border-radius: 5px; }
+
+.link__adalab:hover {
+  background-color: #099d8d;
+  color: #fff; }
+
+.link__github:hover {
+  background-color: #CCC;
+  color: #000; }
+
+body {
+  padding: 2rem;
+  font-family: "Roboto", sans-serif; }
+
+.page__header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  flex-direction: column;
+  gap: 30px; }
+  .page__header h1 {
+    margin-bottom: 20px;
+    font-size: 3rem; }
+  .page__header p {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    text-align: justify; }
+  .page__header button {
+    padding: 15px;
+    border: none;
+    border-radius: 40px;
+    background-color: #6c63ff;
+    color: white;
+    text-transform: uppercase; }
+  .page__header img {
+    width: 100%;
+    max-width: 550px;
+    -o-object-fit: fill;
+    object-fit: fill; }
+  @media all and (min-width: 768px) {
+    .page__header {
+      padding: 0 50px;
+      flex-direction: row; }
+      .page__header .page__header--info {
+        width: 60%; } }
+
+.page__main {
+  width: 100%;
+  height: auto; }
+  .page__main .title {
+    font-size: 2.8rem;
+    color: #6c63ff;
+    text-align: center; }
+  .page__main .form {
+    padding: 20px 40px;
+    box-shadow: 0 3px 10px #e6e6e6; }
+    .page__main .form__fieldset {
+      border-style: none; }
+    .page__main .form__title {
+      font-size: 2rem;
+      color: #6c63ff; }
+    .page__main .form input {
+      padding: 10px; }
+    .page__main .form__result {
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 8px;
+      background-color: white; }
+      .page__main .form__result--no-border {
+        border: none; }
+  .page__main .calculator__result {
+    padding: 20px 40px;
+    background-color: #6c63ff; }
+    .page__main .calculator__result--title {
+      font-size: 2rem;
+      color: white; }
+
+.page__footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 1rem;
+  color: #e6e6e6; }
+
+.main__list {
+  padding-left: 2rem;
+  padding-bottom: 20px; }
+
+/*# sourceMappingURL=main.css.map */
