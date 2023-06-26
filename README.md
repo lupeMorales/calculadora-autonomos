@@ -1,4 +1,4 @@
-![InvoiceUp](./src/images/WhiteLogo.png=x250)
+![InvoiceUp](./src/images/WhiteLogo.png)
 
 # Calculadora de los autónomos <span> | </span>  <a href="https://lupemorales.github.io/anime/" target="_blank">   Demo </a><span> | </span>
     
