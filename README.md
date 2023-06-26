@@ -1,4 +1,4 @@
-![Anime](https://github.com/lupeMorales/modulo-2-evaluacion-final-lupeMorales/blob/main/src/images/logo.png?raw=true)
+![Anime](./src/images/WhiteLogo.png)
 
 # Calculadora de los autónomos <span> | </span>  <a href="https://lupemorales.github.io/anime/" target="_blank">   Demo </a><span> | </span>
     
@@ -47,7 +47,7 @@ $npm start
 
 ## Contacto
 
-- WebSite []
+- [Portfolio](https://lupemorales.github.io/portfolio/)
 - GitHub [@lupeMorales](https://github.com/lupeMorales )
 - Linkedin [@GuadalupeMoralesCarmona](https://linkedin.com/in/guadalupe-morales-carmona-817245226/ )
 
