@@ -1,5 +1,5 @@
 .link__main {
-  color: #fff;
+  color: #000;
 }
 
 .link__main:hover {
@@ -8,5 +8,5 @@
 
 .link__github:hover {
   background-color: #ccc;
-  color: #000;
+  color: $color-primary;
 }

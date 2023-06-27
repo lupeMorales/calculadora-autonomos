@@ -1,13 +1,10 @@
 .page__footer {
-  position: fixed;
+  /*   position: fixed; */
   display: flex;
   left: 0;
   bottom: 0;
   width: 100vw;
   padding: 2rem;
-  background-color: black;
-  color: white;
-
   p {
     margin: auto;
   }

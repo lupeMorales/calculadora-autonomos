@@ -13,14 +13,14 @@ html {
   border-radius: 5px; }
 
 .link__main {
-  color: #fff; }
+  color: #000; }
 
 .link__main:hover {
   color: #6c63ff; }
 
 .link__github:hover {
   background-color: #ccc;
-  color: #000; }
+  color: #6c63ff; }
 
 body {
   padding: 2rem;
@@ -176,6 +176,14 @@ body {
       font-size: 2rem;
       color: black; }
 
-/* @import "layout/footer"; */
+.page__footer {
+  /*   position: fixed; */
+  display: flex;
+  left: 0;
+  bottom: 0;
+  width: 100vw;
+  padding: 2rem; }
+  .page__footer p {
+    margin: auto; }
 
 /*# sourceMappingURL=main.css.map */
