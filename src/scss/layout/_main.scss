@@ -23,6 +23,20 @@
   .form {
     padding: 40px;
     box-shadow: 5px 10px 20px $color-secondary;
+    .radio {
+      accent-color: $color-primary;
+    }
+    .icon {
+      position: absolute;
+      transform: scale(0.7) translate(-5px, -25px);
+      cursor: pointer;
+    }
+    .btn-info {
+      padding: 10px;
+      border-style: none;
+      background-color: transparent;
+      cursor: pointer;
+    }
 
     &__fieldset {
       border-style: none;
@@ -41,15 +55,20 @@
       color: $color-primary;
     }
     label {
+      width: 10ch;
       font-size: 1.8rem;
     }
     input {
       margin: 16px 0;
       padding: 10px;
+      width: auto;
       font-size: 1.8rem;
       border: 1px solid black;
       border-radius: 8px;
       text-align: end;
+      background-image: url("./images/currency-euro.png");
+      background-repeat: no-repeat;
+      background-position: 2ch;
     }
 
     input:nth-child(2) {

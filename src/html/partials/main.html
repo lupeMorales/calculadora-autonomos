@@ -7,21 +7,57 @@
       <form class="form">
         <fieldset class="form__fieldset">
           <legend class="form__title">Base imponible (€)</legend>
-          <input type="text" id="tax-base" class="js-tax-base" />
+          <input type="text" id="tax-base" class="js-tax-base js-input" />
         </fieldset>
 
         <fieldset class="form__fieldset">
           <legend class="form__title">Impuestos</legend>
           <div class="form__fieldset--section">
-            <input type="radio" id="iva" checked="checked" />
-            <label for="iva">IVA (%)</label>
-            <input type="number" value="21" max="21" min="0" class="js-iva" />
+            <input type="radio" id="iva" checked="checked" class="radio" />
+            <label for="iva"
+              >IVA (%)
+              <span class="icon"
+                ><a
+                  href="https://centregestor.es/que-tipo-de-iva-debo-aplicar/#:~:text=Tanto%20si%20usted%20es%20el,%25)%20es%20el%20que%20corresponde."
+                  target="_blank"
+                  title="info"
+                  class="btn-info"
+                >
+                  <img src="./assets/images/vectorInfo.png" alt="info icon" />
+                </a> </span
+            ></label>
+            <input
+              type="number"
+              value="21"
+              max="21"
+              min="0"
+              title="Indica el IVA"
+              class="js-iva"
+            />
             <p class="form__result js-iva-result">0,00 €</p>
           </div>
           <div class="form__fieldset--section">
-            <input type="radio" id="irpf" checked="checked" />
-            <label for="irpf">IRPF (%)</label>
-            <input type="number" value="15" class="js-irpf" />
+            <input type="radio" id="irpf" checked="checked" class="radio" />
+            <label for="irpf"
+              >IRPF (%)
+              <span class="icon"
+                ><a
+                  href="https://www.infoautonomos.com/fiscalidad/irpf-autonomo/"
+                  target="_blank"
+                  title="info"
+                  class="js-btn-info btn-info"
+                >
+                  <img src="./assets/images/vectorInfo.png" alt="info icon" />
+                </a> </span
+            ></label>
+            <input
+              type="number"
+              value="15"
+              max="15"
+              min="0"
+              title="Indica el IRPF"
+              class="js-irpf"
+            />
             <p class="form__result js-irpf-result">0,00 €</p>
           </div>
         </fieldset>

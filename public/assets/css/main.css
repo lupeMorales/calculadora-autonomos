@@ -94,6 +94,17 @@ body {
   .page__main .form {
     padding: 40px;
     box-shadow: 5px 10px 20px #ecf2f9; }
+    .page__main .form .radio {
+      accent-color: #6c63ff; }
+    .page__main .form .icon {
+      position: absolute;
+      transform: scale(0.7) translate(-5px, -25px);
+      cursor: pointer; }
+    .page__main .form .btn-info {
+      padding: 10px;
+      border-style: none;
+      background-color: transparent;
+      cursor: pointer; }
     .page__main .form__fieldset {
       border-style: none; }
       .page__main .form__fieldset--section {
@@ -106,14 +117,19 @@ body {
       font-size: 2rem;
       color: #6c63ff; }
     .page__main .form label {
+      width: 10ch;
       font-size: 1.8rem; }
     .page__main .form input {
       margin: 16px 0;
       padding: 10px;
+      width: auto;
       font-size: 1.8rem;
       border: 1px solid black;
       border-radius: 8px;
-      text-align: end; }
+      text-align: end;
+      background-image: url("./images/currency-euro.png");
+      background-repeat: no-repeat;
+      background-position: 2ch; }
     .page__main .form input:nth-child(2) {
       width: 100%; }
     .page__main .form input:nth-child(3) {
